@@ -3,5 +3,6 @@ const lesson1Controller = require('../controllers/lesson1');
 
 routes.get('/', lesson1Controller.kanisRoute);
 routes.get('/rufus', lesson1Controller.rufusRoute);
+routes.use('/', require('./contacts'));
 
 module.exports = routes;
